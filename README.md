@@ -1,5 +1,7 @@
 # 💳 Prueba Técnica - Desarrollador Frontend Semi-Senior (LinkTic)
 
+![Vue 3](https://img.shields.io/badge/Vue-3.5-4FC08D?style=flat&logo=vue.js&logoColor=white) ![Quasar](https://img.shields.io/badge/Quasar-2.33-1976D2?style=flat&logo=quasar&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat&logo=typescript&logoColor=white) ![Vitest](https://img.shields.io/badge/Tests-7%20Passing-success?style=flat&logo=vitest&logoColor=white)
+
 Bienvenido a la solución de la prueba técnica para el rol de **Frontend Semi-Senior** en **LinkTic**. Esta aplicación es un panel administrativo moderno, robusto y accesible para la gestión integral de métodos de pago.
 
 ---
