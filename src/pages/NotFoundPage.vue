@@ -17,6 +17,7 @@
         unelevated
         color="primary"
         size="md"
+        replace
         :icon="authStore.isAuthenticated() ? 'dashboard' : 'login'"
         :label="authStore.isAuthenticated() ? 'Ir al Panel Principal' : 'Ir a Iniciar Sesión'"
         :to="authStore.isAuthenticated() ? '/dashboard/payment-methods' : '/login'"

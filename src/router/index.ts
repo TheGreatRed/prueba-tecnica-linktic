@@ -42,9 +42,9 @@ router.beforeEach((to, _from, next) => {
   const isAuthenticated = authStore.isAuthenticated()
 
   if (to.meta.requiresAuth && !isAuthenticated) {
-    next({ name: "login" })
+    next({ name: "login", replace: true })
   } else if (to.meta.requiresGuest && isAuthenticated) {
-    next({ name: "payment-methods" })
+    next({ name: "payment-methods", replace: true })
   } else {
     next()
   }
