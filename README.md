@@ -4,8 +4,21 @@ Bienvenido a la solución de la prueba técnica para el rol de **Frontend Semi-S
 
 ---
 
+## 🌐 Demo en Vivo
+
+Puedes interactuar directamente con la aplicación desplegada en producción en:
+🔗 **[https://prueba-tecnica-linktic-umber.vercel.app](https://prueba-tecnica-linktic-umber.vercel.app)**
+
+### 🔑 Credenciales de Demostración:
+* **Usuario:** `admin`
+* **Contraseña:** `admin123`
+
+
+---
+
 ## 📋 Tabla de Contenido
 
+- [Demo en Vivo](#-demo-en-vivo)
 - [Stack Tecnológico](#-stack-tecnológico)
 - [Instalación y Puesta en Marcha](#-instalación-y-puesta-en-marcha)
 - [Credenciales de Acceso](#-credenciales-de-acceso)
@@ -41,7 +54,7 @@ Bienvenido a la solución de la prueba técnica para el rol de **Frontend Semi-S
 1. **Clonar el repositorio:**
 
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/TheGreatRed/prueba-tecnica-linktic.git
    cd prueba-tecnica-linktic
    ```
 
