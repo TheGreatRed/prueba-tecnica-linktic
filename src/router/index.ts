@@ -27,6 +27,11 @@ const router = createRouter({
           component: () => import("../pages/PaymentMethodsPage.vue")
         }
       ]
+    },
+    {
+      path: "/:catchAll(.*)*",
+      name: "not-found",
+      component: () => import("../pages/NotFoundPage.vue")
     }
   ]
 })
