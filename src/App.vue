@@ -11,14 +11,17 @@ const router = useRouter()
 const authStore = useAuthStore()
 
 /**
- * Handles browser bfcache (Back-Forward Cache) restores seamlessly
+ * Handles browser bfcache (Back-Forward Cache) and navigation restores seamlessly
  */
-const handlePageShow = (event: PageTransitionEvent) => {
-  if (event.persisted) {
-    const currentRoute = router.currentRoute.value
-    if (authStore.isAuthenticated() && currentRoute.meta.requiresGuest) {
-      router.replace({ name: "payment-methods" })
-    }
+const handlePageShow = () => {
+  authStore.syncState()
+  const currentRoute = router.currentRoute.value
+  const isAuthenticated = authStore.isAuthenticated()
+
+  if (isAuthenticated && currentRoute.meta.requiresGuest) {
+    router.replace({ name: "payment-methods" })
+  } else if (!isAuthenticated && currentRoute.meta.requiresAuth) {
+    router.replace({ name: "login" })
   }
 }
 

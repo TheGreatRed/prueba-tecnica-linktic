@@ -39,6 +39,7 @@ const router = createRouter({
 // Navigation Guards
 router.beforeEach((to, _from, next) => {
   const authStore = useAuthStore()
+  authStore.syncState()
   const isAuthenticated = authStore.isAuthenticated()
 
   if (to.meta.requiresAuth && !isAuthenticated) {
